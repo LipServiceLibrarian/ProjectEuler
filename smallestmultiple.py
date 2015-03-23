@@ -12,11 +12,11 @@ def smallestmultiple():
    long(number)
    flag = 'false'
    while (flag == 'false'):
-       innerflag = 'true';
+       flag = 'true';
        for i in range (11,20):
            if (number % i != 0):
-               innerflag = 'false'
-       if innerflag == 'true':
+               flag = 'false'
+       if flag == 'true':
            break
        number += 20
    return number
