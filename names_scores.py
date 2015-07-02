@@ -9,8 +9,8 @@
 # Judith Gammie
 # 2 July 2015
 
-def names_score():
-    with open(r'names.txt', 'r') as infile, open(r'temp.txt', 'w') as outfile:
+def names_score(input_filename):
+    with open(input_filename, 'r') as infile, open(r'temp.txt', 'w') as outfile:
         data = infile.read().replace('"','')
         outfile.write(data)
 
@@ -26,4 +26,5 @@ def names_score():
         total_score = total_score + total
     return total_score
 
-print names_score()
+input = 'names.txt'
+print names_score(input)
