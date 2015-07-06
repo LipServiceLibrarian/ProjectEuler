@@ -1,3 +1,9 @@
+# Project Euler Problem 9: Find the product of a, b and c in the 
+# pythagorean triplet a^2 + b^2 = c^2 and a + b + c = 1000
+# 
+# Judith Gammie
+# 6th July 2015
+
 import math
 def pythag_triplets():
     for i in range (1,1000):
